@@ -6,4 +6,6 @@ This is a Quarto website.
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
-![./images/h11.png]{width=80% fig-align="center"}
+::: {layout-align="center"}
+![](images/h11.png){width="40%"}
+:::
