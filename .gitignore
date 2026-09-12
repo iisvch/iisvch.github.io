@@ -217,6 +217,12 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
+.venv/*
+
+# Quarto generated files
+/_site/
 /.quarto/
 **/*.quarto_ipynb
-.venv/*
+
+# macOS files
+.DS_Store
