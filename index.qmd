@@ -9,3 +9,15 @@ To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 ::: {layout-align="center"}
 ![](images/h11.png){width="40%"}
 :::
+```{python}
+#| echo: true
+import pandas as pd
+
+df = pd.DataFrame({
+    "Product": ["A", "B", "C"],
+    "Sales": [100, 150, 200]
+})
+
+print(df.to_string(index=False))
+print("\nAverage sales:", df["Sales"].mean())
+```
