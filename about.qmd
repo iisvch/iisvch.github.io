@@ -3,3 +3,12 @@ title: "About"
 ---
 
 About this site
+## My computing environment
+
+```{python}
+#| echo: true
+import platform
+
+print("Operating system:", platform.system())
+print("Python version:", platform.python_version())
+```
