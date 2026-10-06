@@ -1,0 +1,8 @@
+---
+title: "Project 2 | Igor Iasevych"
+description: "A placeholder for the next portfolio project."
+---
+
+```{=html}
+<div class="site-shell placeholder-page"><a class="back-link" href="../index.qmd#selected-work">← All projects</a><p class="eyebrow">PROJECT 02</p><h1>Project 2<span class="accent-dot">.</span></h1><span class="project-status muted">Coming soon</span><div class="empty-project" aria-label="Project content not yet added"><span class="empty-number" aria-hidden="true">02</span><p>The next question is taking shape.</p><span>Project details will appear here.</span></div><a class="btn-primary-custom" href="canarsie.qmd">Explore the Canarsie case study <span aria-hidden="true">↗</span></a></div>
+```

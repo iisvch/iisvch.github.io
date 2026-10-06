@@ -1,21 +1,81 @@
 project:
   type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - about.qmd
+    - projects/*.qmd
+  resources:
+    - CV.pdf
+    - Canarsie/*.ipynb
+    - Canarsie/*.pptx
+    - Canarsie/*.docx
+    - Canarsie/*.xlsx
+    - assets/*
+    - images/Ich_a.png
+    - site.js
+    - .nojekyll
 
 website:
-  title: "iigor"
+  title: "Igor Iasevych"
+  site-url: https://iisvch.github.io
+  description: "Strategy, finance, and applied analytics. A portfolio by Igor Iasevych, based in Boston."
+  favicon: assets/favicon.svg
   navbar:
+    background: "#f7f7f2"
+    foreground: "#202e28"
+    title: "Igor Iasevych<span class='brand-dot'>.</span>"
+    collapse-below: lg
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - text: Projects
+        menu:
+          - href: projects/canarsie.qmd
+            text: "01 / Canarsie real estate"
+          - href: projects/project-2.qmd
+            text: "02 / Project 2 — coming soon"
+          - href: projects/project-3.qmd
+            text: "03 / Project 3 — coming soon"
+      - href: about.qmd
+        text: About
+    right:
+      - href: https://www.linkedin.com/in/igoriasevych/
+        icon: linkedin
+        aria-label: "Igor Iasevych on LinkedIn"
+      - href: https://github.com/iisvch
+        icon: github
+        aria-label: "Igor Iasevych on GitHub"
+      - href: CV.pdf
+        text: "View CV ↗"
+  page-footer:
+    left: "© 2026 Igor Iasevych"
+    center: "Strategy. Finance. Analytics."
+    right:
+      - text: LinkedIn
+        href: https://www.linkedin.com/in/igoriasevych/
+      - text: GitHub
+        href: https://github.com/iisvch
+  search:
+    location: navbar
+    type: overlay
+  open-graph: true
+  twitter-card: false
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: cosmo
     css: styles.css
-    toc: true
+    lang: en
+    page-layout: full
+    toc: false
+    title-block-banner: false
+    smooth-scroll: true
+    anchor-sections: true
+    link-external-newwindow: true
+    code-copy: true
+    code-fold: true
+    include-after-body: _includes/scripts.html
 
-
-
+execute:
+  enabled: false
