@@ -1,15 +1,34 @@
 ---
-title: "Canarsie market entry | Igor Iasevych"
-description: "A concise overview of a Brooklyn real estate market entry study."
+title: "Canarsie market entry"
+description: "Should a real estate brokerage open an office in this Brooklyn neighborhood?"
 image: ../assets/canarsie-street.jpg
 ---
 
-```{=html}
-<div class="portfolio-shell page-shell project-page">
-  <a class="back-link" href="../projects.qmd">← All projects</a>
-  <header class="page-heading"><p class="eyebrow">01 / REAL ESTATE ANALYTICS · BOSTON UNIVERSITY</p><h1>Canarsie market entry<span class="accent">.</span></h1><p>Should a real estate brokerage open an office in this Brooklyn neighborhood?</p></header>
-  <div class="project-overview"><img class="overview-image" src="../assets/canarsie-street.jpg" alt="Brick homes in Canarsie, Brooklyn" width="960" height="682"><div><h2>The approach</h2><p>I combined NYC sales data with neighborhood clustering, local pricing models, quarterly forecasting, and financial scenario analysis in R.</p><ul class="skill-tags" aria-label="Project methods"><li>R</li><li>Clustering</li><li>Regression</li><li>ETS</li><li>NPV</li></ul><p class="project-credit">Individual academic project · AD 571 · 2026</p></div></div>
-  <section class="findings-section" aria-labelledby="findings-title"><h2 id="findings-title">What I found</h2><div class="finding-grid"><article><span class="eyebrow">THE MARKET</span><h3>Focus on the core.</h3><p>Standard properties represented 48.3% of the clustered sample, offering the largest initial listing pool.</p></article><article><span class="eyebrow">THE MODEL</span><h3>Use local context.</h3><p>A citywide model overpredicted Canarsie prices. Local pricing and neighborhood knowledge matter.</p></article><article><span class="eyebrow">THE DECISION</span><h3>Enter lean.</h3><p>The assignment model favored a 4.3% commission and no salaried staff. Returns turned negative in the conservative scenario.</p></article></div></section>
-  <section class="resource-section" aria-labelledby="resources-title"><h2 id="resources-title">Explore the full work</h2><p>The complete analysis, charts, and model assumptions are in the original project files.</p><div class="download-links"><a href="../Canarsie/iigor_A1-5_CANARSIE.ipynb" download>R notebook <span aria-hidden="true">↓</span></a><a href="../Canarsie/iigor_CANARSIE.pptx" download>Presentation <span aria-hidden="true">↓</span></a><a href="../Canarsie/iigor_CANARSIE.docx" download>Write-up <span aria-hidden="true">↓</span></a><a href="../Canarsie/iigor_Canarsie.xlsx" download>Workbook <span aria-hidden="true">↓</span></a></div><p class="source-note">Academic findings under assignment assumptions. Samples differ by analytical stage; results summarize the original project.</p></section>
-</div>
-```
+[← All projects](../projects.qmd)
+
+![Brick homes in Canarsie, Brooklyn](../assets/canarsie-street.jpg){fig-alt="Brick homes in Canarsie, Brooklyn"}
+
+## The approach
+
+I combined NYC sales data with neighborhood clustering, local pricing models, quarterly forecasting, and financial scenario analysis in R.
+
+**Methods:** Clustering · Regression · ETS · NPV
+
+**Course:** Boston University · AD 571 · 2026
+
+## What I found
+
+- **Focus on the core.** Standard properties represented 48.3% of the clustered sample, offering the largest initial listing pool.
+- **Use local context.** A citywide model overpredicted Canarsie prices. Local pricing and neighborhood knowledge matter.
+- **Enter lean.** The assignment model favored a 4.3% commission and no salaried staff. Returns turned negative in the conservative scenario.
+
+## Explore the full work
+
+The complete analysis, charts, and model assumptions are in the original project files:
+
+- [R notebook](../Canarsie/iigor_A1-5_CANARSIE.ipynb)
+- [Presentation](../Canarsie/iigor_CANARSIE.pptx)
+- [Write-up](../Canarsie/iigor_CANARSIE.docx)
+- [Regression workbook](../Canarsie/iigor_Canarsie.xlsx)
+
+*Academic findings under assignment assumptions. Samples differ by analytical stage; results summarize the original project.*

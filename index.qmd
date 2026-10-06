@@ -1,32 +1,30 @@
 ---
-title: "Igor Iasevych | Strategy & Applied Analytics"
-description: "Business experience meets applied analytics. Explore my background and selected projects."
+title: "Igor Iasevych"
+description: "Strategy, finance, and applied analytics."
 image: images/Ich_a.png
+about:
+  template: trestles
+  image-width: 310px
+  image-shape: rounded
+  image-alt: "Portrait of Igor Iasevych"
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:iiasevych@gmail.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/igoriasevych/
+    - icon: github
+      text: GitHub
+      href: https://github.com/iisvch
 ---
 
-```{=html}
-<div class="portfolio-shell home-shell">
-  <section class="profile" aria-labelledby="profile-title">
-    <figure class="profile-photo">
-      <img src="images/Ich_a.png" alt="Portrait of Igor Iasevych" width="310" height="370" fetchpriority="high">
-      <figcaption>Based in Boston, Massachusetts</figcaption>
-    </figure>
-    <div class="profile-copy">
-      <p class="eyebrow">STRATEGY · FINANCE · ANALYTICS</p>
-      <h1 id="profile-title">Igor Iasevych<span class="accent">.</span></h1>
-      <p class="role-line">Business perspective. Analytical thinking.</p>
-      <p>I bring more than a decade of experience in finance, strategy, and e-commerce to turning complex business questions into clear decisions.</p>
-      <p>Now pursuing an MS in Applied Business Analytics at Boston University, I combine that experience with R, Python, and statistical modeling.</p>
-      <div class="action-row">
-        <a class="portfolio-button" href="projects.qmd">Explore projects <span aria-hidden="true">↗</span></a>
-        <a class="text-link" href="cv.qmd">View my CV <span aria-hidden="true">↗</span></a>
-      </div>
-      <nav class="social-links" aria-label="Connect with Igor">
-        <a href="mailto:iiasevych@gmail.com"><i class="bi bi-envelope" aria-hidden="true"></i> Email</a>
-        <a href="https://www.linkedin.com/in/igoriasevych/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin" aria-hidden="true"></i> LinkedIn</a>
-        <a href="https://github.com/iisvch" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i> GitHub</a>
-      </nav>
-    </div>
-  </section>
-</div>
-```
+## Business perspective. Analytical thinking.
+
+I bring more than a decade of experience in finance, strategy, and e-commerce to turning complex business questions into clear decisions.
+
+Now pursuing an MS in Applied Business Analytics at Boston University, I combine that experience with R, Python, and statistical modeling.
+
+**[Explore projects ↗](projects.qmd)** · [View my CV ↗](cv.qmd)
+
+*Based in Boston, Massachusetts.*

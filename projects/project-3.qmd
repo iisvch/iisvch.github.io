@@ -1,8 +1,8 @@
 ---
-title: "Project 3 | Igor Iasevych"
-description: "A future addition to my analytics portfolio."
+title: "Project 3"
+description: "Coming soon."
 ---
 
-```{=html}
-<div class="portfolio-shell page-shell narrow-page"><a class="back-link" href="../projects.qmd">← All projects</a><header class="page-heading"><p class="eyebrow">COMING SOON</p><h1>Project 3<span class="accent">.</span></h1><p>New work will appear here as my portfolio grows.</p></header><a class="portfolio-button" href="canarsie.qmd">Explore Canarsie <span aria-hidden="true">↗</span></a></div>
-```
+New work will appear here as my portfolio grows.
+
+[← All projects](../projects.qmd) · [Explore Canarsie ↗](canarsie.qmd)

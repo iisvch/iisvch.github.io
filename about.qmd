@@ -1,13 +1,18 @@
 ---
-title: "About | Igor Iasevych"
-description: "My background in strategy, finance, and applied business analytics."
+title: "About Me"
+description: "Business experience. Analytical curiosity."
 ---
 
-```{=html}
-<div class="portfolio-shell page-shell narrow-page">
-  <header class="page-heading"><p class="eyebrow">A LITTLE ABOUT ME</p><h1>Business experience.<br>Analytical curiosity<span class="accent">.</span></h1></header>
-  <div class="body-copy"><p class="lead-copy">I'm Igor Iasevych, a Boston-based business professional working across strategy, operations, and analytics.</p><p>My background spans banking, consulting, and e-commerce, including AliExpress, Sberbank, Lamoda, PwC, and KPMG. I connect financial discipline with customer needs and practical execution.</p><p>I'm now pursuing an MS in Applied Business Analytics at Boston University, building on that foundation with statistical modeling, R, and Python.</p></div>
-  <section class="education-section"><h2>Education</h2><dl class="education-list"><div><dt>Boston University</dt><dd>MS, Applied Business Analytics · In progress</dd></div><div><dt>EU Business School</dt><dd>MBA, Global Banking and Finance</dd></div><div><dt>Oles Honchar Dnipro National University</dt><dd>Bachelor's, Management</dd></div></dl></section>
-  <div class="action-row"><a class="portfolio-button" href="cv.qmd">View my CV <span aria-hidden="true">↗</span></a><a class="text-link" href="contact.qmd">Let's connect <span aria-hidden="true">↗</span></a></div>
-</div>
-```
+I'm Igor Iasevych, a Boston-based business professional working across strategy, operations, and analytics.
+
+My background spans banking, consulting, and e-commerce, including AliExpress, Sberbank, Lamoda, PwC, and KPMG. I connect financial discipline with customer needs and practical execution.
+
+I'm now pursuing an MS in Applied Business Analytics at Boston University, building on that foundation with statistical modeling, R, and Python.
+
+## Education
+
+- **Boston University** — MS, Applied Business Analytics · In progress
+- **EU Business School** — MBA, Global Banking and Finance
+- **Oles Honchar Dnipro National University** — Bachelor's, Management
+
+[View my CV ↗](cv.qmd) · [Let's connect ↗](contact.qmd)
