@@ -9,11 +9,8 @@ project:
     - projects/*.qmd
   resources:
     - CV.pdf
-    - Canarsie/*.ipynb
-    - Canarsie/*.pptx
-    - Canarsie/*.docx
-    - Canarsie/*.xlsx
-    - assets/*
+    - assets/canarsie-street.jpg
+    - assets/favicon.svg
     - images/Ich_a.png
     - .nojekyll
 
