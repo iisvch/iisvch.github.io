@@ -92,3 +92,22 @@ li::marker { color: var(--teal); }
 }
 @media (prefers-reduced-motion: reduce) { *,*::before,*::after { transition: none !important; scroll-behavior: auto !important; } }
 @media print { .navbar,.nav-footer,.about-links { display:none !important; } body { background:#fff; } }
+
+/* A compact dashboard authored with Quarto Markdown and R. */
+.market-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 24px 0; }
+.market-metric { border: 1px solid var(--line); border-radius: 9px; background: var(--soft); padding: 22px 24px; }
+.market-metric > p:first-child { font-size: .78rem; margin-bottom: 12px; }
+.market-metric h3 { margin: 0 0 8px; font-size: 2rem; line-height: 1.2; white-space: nowrap; }
+.market-metric > p:last-child, .market-metric section > p { font-size: .72rem; margin-bottom: 0; }
+.plotly.html-widget { width: 100% !important; margin: 20px 0 26px; }
+@media (max-width: 767px) {
+  .market-metrics { gap: 8px; }
+  .market-metric { padding: 15px 10px; }
+  .market-metric h3 { font-size: 1.35rem; }
+  .market-metric > p:first-child { font-size: .66rem; }
+  .market-metric > p:last-child { font-size: .62rem; }
+}
+@media (max-width: 400px) {
+  .market-metrics { grid-template-columns: 1fr; }
+  .market-metric { padding: 15px 20px; }
+}

@@ -2,7 +2,34 @@
 title: "Canarsie market entry"
 description: "Should a real estate brokerage open an office in this Brooklyn neighborhood?"
 image: ../assets/canarsie-street.jpg
+engine: knitr
+execute:
+  enabled: true
+  echo: false
+  warning: false
+  message: false
 ---
+
+```{r}
+#| label: neighborhood-data
+library(ggplot2)
+library(dplyr)
+library(scales)
+library(plotly)
+
+nbhd_agg <- read.csv("../data/canarsie-neighborhoods.csv")
+nbhd_agg$cluster <- factor(nbhd_agg$cluster)
+MY_NEIGHBORHOOD <- "CANARSIE"
+my_row <- filter(nbhd_agg, NEIGHBORHOOD_NAME == MY_NEIGHBORHOOD)
+cluster_names <- c("1" = "Budget basics", "2" = "Mid-market", "3" = "Luxury")
+nbhd_agg <- nbhd_agg %>% mutate(
+  hover = paste0(NEIGHBORHOOD_NAME,
+    "<br>Sales: ", comma(total_sales),
+    "<br>Median $/sq ft: ", dollar(median_psf),
+    "<br>Median sale price: ", dollar(median_price),
+    "<br>Cluster ", cluster, ": ", cluster_names[as.character(cluster)])
+)
+```
 
 [← All projects](../projects.qmd)
 
@@ -14,21 +41,118 @@ I combined NYC sales data with neighborhood clustering, local pricing models, qu
 
 **Methods:** Clustering · Regression · ETS · NPV
 
-**Course:** Boston University · AD 571 · 2026
-
 ## What I found
 
 - **Focus on the core.** Standard properties represented 48.3% of the clustered sample, offering the largest initial listing pool.
 - **Use local context.** A citywide model overpredicted Canarsie prices. Local pricing and neighborhood knowledge matter.
 - **Enter lean.** The assignment model favored a 4.3% commission and no salaried staff. Returns turned negative in the conservative scenario.
 
-## Explore the full work
+## Neighborhood explorer
 
-The complete analysis, charts, and model assumptions are in the original project files:
+Where does Canarsie sit in NYC's residential market? Compare **256 neighborhoods** using cleaned sales from **2009–2025**.
 
-- [R notebook](../Canarsie/iigor_A1-5_CANARSIE.ipynb)
-- [Presentation](../Canarsie/iigor_CANARSIE.pptx)
-- [Write-up](../Canarsie/iigor_CANARSIE.docx)
-- [Regression workbook](../Canarsie/iigor_Canarsie.xlsx)
+::: {.market-metrics}
+::: {.market-metric}
+**Canarsie sales**
 
-*Academic findings under assignment assumptions. Samples differ by analytical stage; results summarize the original project.*
+### `r comma(my_row$total_sales)`
+
+Residential transactions
+:::
+
+::: {.market-metric}
+**Median price / sq ft**
+
+### `r dollar(my_row$median_psf)`
+
+Canarsie · 2009–2025
+:::
+
+::: {.market-metric}
+**Median sale price**
+
+### `r dollar(my_row$median_price)`
+
+Canarsie · 2009–2025
+:::
+:::
+
+Each point is a neighborhood: sales count on the horizontal axis, median price per square foot on the vertical axis. Colors identify clusters; the **black diamond marks Canarsie**.
+
+**Explore:** Hover or tap a point for details. Click a cluster in the legend to hide or show it, drag to zoom, and double-click the plot to reset.
+
+### Strategic Clustering — All NYC Neighborhoods
+
+```{r}
+#| label: strategic-clustering
+#| fig-alt: "Interactive scatter plot of 256 NYC neighborhoods by residential sales count and median price per square foot. Canarsie is marked by a black diamond."
+
+p <- ggplot(nbhd_agg, aes(x = total_sales, y = median_psf, color = cluster, text = hover)) +
+  geom_point(alpha = 0.6, size = 2) +
+  geom_point(data = filter(nbhd_agg, NEIGHBORHOOD_NAME == MY_NEIGHBORHOOD),
+             color = "black", size = 5, shape = 18) +
+  geom_text(data = filter(nbhd_agg, NEIGHBORHOOD_NAME == MY_NEIGHBORHOOD),
+            aes(label = NEIGHBORHOOD_NAME), vjust = -1, color = "black", size = 3) +
+  scale_color_manual(values = c("1" = "#638f9b", "2" = "#17685f", "3" = "#bb7953"),
+                     labels = c("1 · Budget basics", "2 · Mid-market", "3 · Luxury")) +
+  scale_y_continuous(labels = label_dollar()) +
+  scale_x_continuous(labels = label_comma()) +
+  labs(title = "Strategic Clustering — All NYC Neighborhoods",
+       subtitle = "Diamond = Canarsie",
+       x = "Total Sales Since 2009", y = "Median $/Sq Ft", color = "Cluster") +
+  theme_minimal(base_size = 12) +
+  theme(panel.grid.minor = element_blank(),
+        plot.title = element_text(size = 16, color = "#223343"),
+        plot.subtitle = element_text(color = "#586570"))
+
+chart <- ggplotly(p, tooltip = "text", height = 500)
+for (i in seq_along(chart$x$data)) {
+  if (identical(chart$x$data[[i]]$mode, "text")) {
+    chart$x$data[[i]]$textposition <- "top center"
+    chart$x$data[[i]]$hoverinfo <- "skip"
+  }
+  name <- chart$x$data[[i]]$name
+  if (!is.null(name) && name %in% names(cluster_names)) {
+    chart$x$data[[i]]$name <- paste(name, cluster_names[name], sep = " · ")
+  }
+}
+chart %>%
+  layout(title = list(text = ""), legend = list(orientation = "h", x = 0, y = -0.22),
+         margin = list(t = 15, b = 110, l = 65, r = 20),
+         paper_bgcolor = "#fbfaf7", plot_bgcolor = "#fbfaf7",
+         font = list(family = "Avenir Next, Segoe UI, Arial", color = "#223343"),
+         hoverlabel = list(bgcolor = "#223343", font = list(color = "white"))) %>%
+  config(displaylogo = FALSE, scrollZoom = FALSE,
+         modeBarButtonsToRemove = c("lasso2d", "select2d"))
+```
+
+### What this means for Canarsie
+
+Canarsie belongs to **Cluster 2: Mid-market**, the notebook's higher-volume group. Its **5,955 sales** and **$268.40 median price per square foot** point to an established residential market at a lower price per square foot than the cluster average of about **$337**.
+
+The luxury cluster sits much higher on the price axis, while many mid-market neighborhoods sit farther to the right. For market entry, the chart helps separate transaction activity from pricing and identify comparable neighborhoods.
+
+### Closest pricing peers
+
+These five neighborhoods share Canarsie's cluster and have the closest median prices per square foot. They provide useful comparison markets, rather than a claim that every property is equivalent.
+
+```{r}
+#| label: neighborhood-peers
+peers <- nbhd_agg %>%
+  filter(cluster == my_row$cluster, NEIGHBORHOOD_NAME != MY_NEIGHBORHOOD) %>%
+  arrange(abs(median_psf - my_row$median_psf)) %>%
+  head(5) %>%
+  transmute(Neighborhood = tools::toTitleCase(tolower(NEIGHBORHOOD_NAME)),
+            Sales = comma(total_sales),
+            `Median $/sq ft` = dollar(median_psf),
+            `Median sale price` = dollar(median_price))
+knitr::kable(peers, align = c("l", "r", "r", "r"))
+```
+
+### How the clusters were built
+
+The analysis keeps residential sales with a positive price and known, positive gross square footage. Neighborhoods need at least two qualifying sales. K-means groups them using four standardized measures: median sale price, transaction count, median price per square foot, and sale-price variability (**k = 3; seed = 42**).
+
+This chart shows two of those four measures. Sales counts describe the cleaned sample; cluster names are descriptive labels from the analysis. Historical clusters are not forecasts of future prices.
+
+*Academic findings under assignment assumptions. Samples differ by analytical stage.*
