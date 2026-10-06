@@ -1,0 +1,12 @@
+---
+title: "Contact | Igor Iasevych"
+description: "Connect with Igor Iasevych by email or LinkedIn."
+---
+
+```{=html}
+<div class="portfolio-shell page-shell narrow-page">
+  <header class="page-heading"><p class="eyebrow">LET'S CONNECT</p><h1>Start a conversation<span class="accent">.</span></h1><p>Interested in strategy, analytics, or working together? I'd be glad to hear from you.</p></header>
+  <div class="contact-list"><a href="mailto:iiasevych@gmail.com"><i class="bi bi-envelope" aria-hidden="true"></i><span><strong>Email</strong><span>iiasevych@gmail.com</span></span><span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/igoriasevych/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin" aria-hidden="true"></i><span><strong>LinkedIn</strong><span>Connect professionally</span></span><span aria-hidden="true">↗</span></a><a href="https://github.com/iisvch" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i><span><strong>GitHub</strong><span>Explore my repositories</span></span><span aria-hidden="true">↗</span></a></div>
+  <p class="location-note">Based in Boston, Massachusetts.</p>
+</div>
+```

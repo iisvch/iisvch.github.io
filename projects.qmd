@@ -1,0 +1,15 @@
+---
+title: "Projects | Igor Iasevych"
+description: "Selected work in applied business analytics."
+---
+
+```{=html}
+<div class="portfolio-shell page-shell">
+  <header class="page-heading"><p class="eyebrow">SELECTED WORK</p><h1>Projects<span class="accent">.</span></h1><p>Business questions, explored through data.</p></header>
+  <article class="project-feature">
+    <a class="project-image" href="projects/canarsie.qmd" aria-label="View the Canarsie project"><img src="assets/canarsie-street.jpg" alt="Residential homes in Canarsie, Brooklyn" width="960" height="682"></a>
+    <div class="project-copy"><div class="project-label"><span class="eyebrow">01 / REAL ESTATE ANALYTICS</span><span class="status-badge">Completed</span></div><h2><a href="projects/canarsie.qmd">Canarsie market entry</a></h2><p>Should a brokerage open an office in Brooklyn? Market segmentation, pricing, and forecasting inform a lean entry strategy.</p><ul class="skill-tags" aria-label="Project methods"><li>R</li><li>Clustering</li><li>Regression</li><li>Forecasting</li></ul><a class="text-link" href="projects/canarsie.qmd">View project <span aria-hidden="true">↗</span></a></div>
+  </article>
+  <div class="upcoming-list" aria-label="Future projects"><div><span class="eyebrow">02</span><span>Project 2</span><span class="muted">Coming soon</span></div><div><span class="eyebrow">03</span><span>Project 3</span><span class="muted">Coming soon</span></div></div>
+</div>
+```

@@ -4,6 +4,9 @@ project:
   render:
     - index.qmd
     - about.qmd
+    - projects.qmd
+    - cv.qmd
+    - contact.qmd
     - projects/*.qmd
   resources:
     - CV.pdf
@@ -13,7 +16,6 @@ project:
     - Canarsie/*.xlsx
     - assets/*
     - images/Ich_a.png
-    - site.js
     - .nojekyll
 
 website:
@@ -22,23 +24,21 @@ website:
   description: "Strategy, finance, and applied analytics. A portfolio by Igor Iasevych, based in Boston."
   favicon: assets/favicon.svg
   navbar:
-    background: "#f7f7f2"
-    foreground: "#202e28"
-    title: "Igor Iasevych<span class='brand-dot'>.</span>"
+    title: "Igor Iasevych"
+    background: "#223343"
+    foreground: "#ffffff"
     collapse-below: lg
     left:
-      - href: index.qmd
-        text: Home
+      - text: Home
+        href: index.qmd
+      - text: About You
+        href: about.qmd
       - text: Projects
-        menu:
-          - href: projects/canarsie.qmd
-            text: "01 / Canarsie real estate"
-          - href: projects/project-2.qmd
-            text: "02 / Project 2 — coming soon"
-          - href: projects/project-3.qmd
-            text: "03 / Project 3 — coming soon"
-      - href: about.qmd
-        text: About
+        href: projects.qmd
+      - text: CV
+        href: cv.qmd
+      - text: Contact
+        href: contact.qmd
     right:
       - href: https://www.linkedin.com/in/igoriasevych/
         icon: linkedin
@@ -46,36 +46,26 @@ website:
       - href: https://github.com/iisvch
         icon: github
         aria-label: "Igor Iasevych on GitHub"
-      - href: CV.pdf
-        text: "View CV ↗"
   page-footer:
     left: "© 2026 Igor Iasevych"
-    center: "Strategy. Finance. Analytics."
-    right:
-      - text: LinkedIn
-        href: https://www.linkedin.com/in/igoriasevych/
-      - text: GitHub
-        href: https://github.com/iisvch
-  search:
-    location: navbar
-    type: overlay
+    right: "Strategy · Finance · Analytics"
+  search: false
   open-graph: true
   twitter-card: false
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme:
+      - cosmo
+      - styles.scss
     lang: en
     page-layout: full
     toc: false
     title-block-banner: false
-    smooth-scroll: true
-    anchor-sections: true
-    link-external-newwindow: true
+    anchor-sections: false
+    link-external-newwindow: false
     code-copy: true
     code-fold: true
-    include-after-body: _includes/scripts.html
 
 execute:
   enabled: false
