@@ -37,14 +37,14 @@
   {
     "objectID": "cv.html",
     "href": "cv.html",
-    "title": "Curriculum vitae",
+    "title": "CV",
     "section": "",
     "text": "Open or download my full CV (PDF) ↗"
   },
   {
     "objectID": "cv.html#selected-experience",
     "href": "cv.html#selected-experience",
-    "title": "Curriculum vitae",
+    "title": "CV",
     "section": "Selected experience",
     "text": "Selected experience\n\n\n\nRole\nOrganization\nYears\n\n\n\n\nBusiness Operations Manager\nXDROPE LLC\n2024–2026\n\n\nStrategy and Development Director\nSberbank\n2023–2024\n\n\nSenior Specialist, Strategy\nAliExpress\n2021–2022\n\n\nCorporate Strategy Manager\nLamoda Group\n2019–2021\n\n\n\nMy full CV includes professional history, education, and capabilities."
   },
@@ -67,28 +67,28 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Residential homes in Canarsie, Brooklyn\n\n\nShould a brokerage open an office in Brooklyn? Market segmentation, pricing, and forecasting inform a lean entry strategy.\nTools: R · Clustering · Regression · Forecasting\nStatus: Completed\nView project ↗"
+    "text": "Residential homes in Canarsie, Brooklyn\n\n\nShould a brokerage open an office in Brooklyn? Market segmentation, pricing, and forecasting inform a lean entry strategy.\nTools: R · Clustering · Regression · Forecasting\nView project ↗"
   },
   {
     "objectID": "projects.html#canarsie-market-entry",
     "href": "projects.html#canarsie-market-entry",
     "title": "Projects",
     "section": "",
-    "text": "Residential homes in Canarsie, Brooklyn\n\n\nShould a brokerage open an office in Brooklyn? Market segmentation, pricing, and forecasting inform a lean entry strategy.\nTools: R · Clustering · Regression · Forecasting\nStatus: Completed\nView project ↗"
+    "text": "Residential homes in Canarsie, Brooklyn\n\n\nShould a brokerage open an office in Brooklyn? Market segmentation, pricing, and forecasting inform a lean entry strategy.\nTools: R · Clustering · Regression · Forecasting\nView project ↗"
   },
   {
-    "objectID": "projects.html#coming-soon",
-    "href": "projects.html#coming-soon",
+    "objectID": "projects.html#next",
+    "href": "projects.html#next",
     "title": "Projects",
-    "section": "Coming soon",
-    "text": "Coming soon\n\nProject 2 — New work will appear here.\nProject 3 — Another addition to my analytics portfolio."
+    "section": "Next",
+    "text": "Next\n\nProject 2 —\nProject 3 —"
   },
   {
     "objectID": "contact.html",
     "href": "contact.html",
     "title": "Contact",
     "section": "",
-    "text": "Interested in strategy, analytics, or working together? I’d be glad to hear from you.\n\nEmail: iiasevych@gmail.com\nLinkedIn: Connect professionally\nGitHub: Explore my repositories\n\nBased in Boston, Massachusetts."
+    "text": "Interested in strategy and analytics. I’d be glad to hear from you.\n\nEmail: iiasevych@gmail.com\nLinkedIn: Connect professionally\nGitHub: Explore my repositories\n\nBased in Boston, Massachusetts."
   },
   {
     "objectID": "projects/project-2.html",
