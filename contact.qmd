@@ -3,7 +3,7 @@ title: "Contact"
 description: "Let's start a conversation."
 ---
 
-Interested in strategy, analytics, or working together? I'd be glad to hear from you.
+Interested in strategy and analytics. I'd be glad to hear from you.
 
 - **Email:** [iiasevych@gmail.com](mailto:iiasevych@gmail.com)
 - **LinkedIn:** [Connect professionally](https://www.linkedin.com/in/igoriasevych/)

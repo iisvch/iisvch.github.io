@@ -1,5 +1,5 @@
 ---
-title: "Curriculum vitae"
+title: "CV"
 description: "More than a decade across finance, strategy, and business operations."
 ---
 

@@ -11,11 +11,10 @@ Should a brokerage open an office in Brooklyn? Market segmentation, pricing, and
 
 **Tools:** R · Clustering · Regression · Forecasting
 
-**Status:** Completed
 
 [View project ↗](projects/canarsie.qmd)
 
-## Coming soon
+## Next
 
-- **Project 2** — New work will appear here.
-- **Project 3** — Another addition to my analytics portfolio.
+- **Project 2** — 
+- **Project 3** —
