@@ -18,7 +18,7 @@
     "href": "projects/canarsie.html#the-approach",
     "title": "Canarsie market entry",
     "section": "The approach",
-    "text": "The approach\nI combined NYC sales data with neighborhood clustering, local pricing models, quarterly forecasting, and financial scenario analysis in R.\nMethods: Clustering · Regression · ETS · NPV\nCourse: Boston University · AD 571 · 2026"
+    "text": "The approach\nI combined NYC sales data with neighborhood clustering, local pricing models, quarterly forecasting, and financial scenario analysis in R.\nMethods: Clustering · Regression · ETS · NPV"
   },
   {
     "objectID": "projects/canarsie.html#what-i-found",
@@ -28,11 +28,11 @@
     "text": "What I found\n\nFocus on the core. Standard properties represented 48.3% of the clustered sample, offering the largest initial listing pool.\nUse local context. A citywide model overpredicted Canarsie prices. Local pricing and neighborhood knowledge matter.\nEnter lean. The assignment model favored a 4.3% commission and no salaried staff. Returns turned negative in the conservative scenario."
   },
   {
-    "objectID": "projects/canarsie.html#explore-the-full-work",
-    "href": "projects/canarsie.html#explore-the-full-work",
+    "objectID": "projects/canarsie.html#neighborhood-explorer",
+    "href": "projects/canarsie.html#neighborhood-explorer",
     "title": "Canarsie market entry",
-    "section": "Explore the full work",
-    "text": "Explore the full work\nThe complete analysis, charts, and model assumptions are in the original project files:\n\nR notebook\nPresentation\nWrite-up\nRegression workbook\n\nAcademic findings under assignment assumptions. Samples differ by analytical stage; results summarize the original project."
+    "section": "Neighborhood explorer",
+    "text": "Neighborhood explorer\nWhere does Canarsie sit in NYC’s residential market? Compare 256 neighborhoods using cleaned sales from 2009–2025.\n\n\nCanarsie sales\n\n5,955\nResidential transactions\n\n\n\nMedian price / sq ft\n\n$268.40\nCanarsie · 2009–2025\n\n\n\nMedian sale price\n\n$503,500\nCanarsie · 2009–2025\n\n\n\nEach point is a neighborhood: sales count on the horizontal axis, median price per square foot on the vertical axis. Colors identify clusters; the black diamond marks Canarsie.\nExplore: Hover or tap a point for details. Click a cluster in the legend to hide or show it, drag to zoom, and double-click the plot to reset.\n\nStrategic Clustering — All NYC Neighborhoods\n\n\n\n\n\n\n\n\nWhat this means for Canarsie\nCanarsie belongs to Cluster 2: Mid-market, the notebook’s higher-volume group. Its 5,955 sales and $268.40 median price per square foot point to an established residential market at a lower price per square foot than the cluster average of about $337.\nThe luxury cluster sits much higher on the price axis, while many mid-market neighborhoods sit farther to the right. For market entry, the chart helps separate transaction activity from pricing and identify comparable neighborhoods.\n\n\nClosest pricing peers\nThese five neighborhoods share Canarsie’s cluster and have the closest median prices per square foot. They provide useful comparison markets, rather than a claim that every property is equivalent.\n\n\n\n\n\nNeighborhood\nSales\nMedian $/sq ft\nMedian sale price\n\n\n\n\nArden Heights\n3,016\n$267.56\n$400,000\n\n\nSouth Jamaica\n5,815\n$260.64\n$389,000\n\n\nSt. Albans\n6,787\n$277.34\n$415,000\n\n\nThrogs Neck\n2,978\n$283.63\n$495,000\n\n\nRidgewood\n3,125\n$284.55\n$814,199\n\n\n\n\n\n\n\nHow the clusters were built\nThe analysis keeps residential sales with a positive price and known, positive gross square footage. Neighborhoods need at least two qualifying sales. K-means groups them using four standardized measures: median sale price, transaction count, median price per square foot, and sale-price variability (k = 3; seed = 42).\nThis chart shows two of those four measures. Sales counts describe the cleaned sample; cluster names are descriptive labels from the analysis. Historical clusters are not forecasts of future prices.\nAcademic findings under assignment assumptions. Samples differ by analytical stage."
   },
   {
     "objectID": "cv.html",
