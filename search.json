@@ -2,57 +2,113 @@
   {
     "objectID": "projects/project-3.html",
     "href": "projects/project-3.html",
-    "title": "Project 3 | Igor Iasevych",
+    "title": "Project 3",
     "section": "",
-    "text": "← All projectsCOMING SOONProject 3.New work will appear here as my portfolio grows.Explore Canarsie ↗"
+    "text": "New work will appear here as my portfolio grows.\n← All projects · Explore Canarsie ↗"
   },
   {
     "objectID": "projects/canarsie.html",
     "href": "projects/canarsie.html",
-    "title": "Canarsie market entry | Igor Iasevych",
+    "title": "Canarsie market entry",
     "section": "",
-    "text": "← All projects\n  01 / REAL ESTATE ANALYTICS · BOSTON UNIVERSITYCanarsie market entry.Should a real estate brokerage open an office in this Brooklyn neighborhood?\n  The approachI combined NYC sales data with neighborhood clustering, local pricing models, quarterly forecasting, and financial scenario analysis in R.RClusteringRegressionETSNPVIndividual academic project · AD 571 · 2026\n  What I foundTHE MARKETFocus on the core.Standard properties represented 48.3% of the clustered sample, offering the largest initial listing pool.THE MODELUse local context.A citywide model overpredicted Canarsie prices. Local pricing and neighborhood knowledge matter.THE DECISIONEnter lean.The assignment model favored a 4.3% commission and no salaried staff. Returns turned negative in the conservative scenario.\n  Explore the full workThe complete analysis, charts, and model assumptions are in the original project files.R notebook ↓Presentation ↓Write-up ↓Workbook ↓Academic findings under assignment assumptions. Samples differ by analytical stage; results summarize the original project."
+    "text": "← All projects"
+  },
+  {
+    "objectID": "projects/canarsie.html#the-approach",
+    "href": "projects/canarsie.html#the-approach",
+    "title": "Canarsie market entry",
+    "section": "The approach",
+    "text": "The approach\nI combined NYC sales data with neighborhood clustering, local pricing models, quarterly forecasting, and financial scenario analysis in R.\nMethods: Clustering · Regression · ETS · NPV\nCourse: Boston University · AD 571 · 2026"
+  },
+  {
+    "objectID": "projects/canarsie.html#what-i-found",
+    "href": "projects/canarsie.html#what-i-found",
+    "title": "Canarsie market entry",
+    "section": "What I found",
+    "text": "What I found\n\nFocus on the core. Standard properties represented 48.3% of the clustered sample, offering the largest initial listing pool.\nUse local context. A citywide model overpredicted Canarsie prices. Local pricing and neighborhood knowledge matter.\nEnter lean. The assignment model favored a 4.3% commission and no salaried staff. Returns turned negative in the conservative scenario."
+  },
+  {
+    "objectID": "projects/canarsie.html#explore-the-full-work",
+    "href": "projects/canarsie.html#explore-the-full-work",
+    "title": "Canarsie market entry",
+    "section": "Explore the full work",
+    "text": "Explore the full work\nThe complete analysis, charts, and model assumptions are in the original project files:\n\nR notebook\nPresentation\nWrite-up\nRegression workbook\n\nAcademic findings under assignment assumptions. Samples differ by analytical stage; results summarize the original project."
   },
   {
     "objectID": "cv.html",
     "href": "cv.html",
-    "title": "CV | Igor Iasevych",
+    "title": "Curriculum vitae",
     "section": "",
-    "text": "EXPERIENCE & EDUCATIONCurriculum vitae.More than a decade across finance, strategy, and business operations.\n  My full CVProfessional history, education, and capabilities.Open CV PDF↗\n  Selected experienceBusiness Operations ManagerXDROPE LLC 2024–2026Strategy and Development DirectorSberbank 2023–2024Senior Specialist, StrategyAliExpress 2021–2022Corporate Strategy ManagerLamoda Group 2019–2021\n  Download CV ↓"
+    "text": "Open or download my full CV (PDF) ↗"
+  },
+  {
+    "objectID": "cv.html#selected-experience",
+    "href": "cv.html#selected-experience",
+    "title": "Curriculum vitae",
+    "section": "Selected experience",
+    "text": "Selected experience\n\n\n\nRole\nOrganization\nYears\n\n\n\n\nBusiness Operations Manager\nXDROPE LLC\n2024–2026\n\n\nStrategy and Development Director\nSberbank\n2023–2024\n\n\nSenior Specialist, Strategy\nAliExpress\n2021–2022\n\n\nCorporate Strategy Manager\nLamoda Group\n2019–2021\n\n\n\nMy full CV includes professional history, education, and capabilities."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About | Igor Iasevych",
+    "title": "About Me",
     "section": "",
-    "text": "A LITTLE ABOUT MEBusiness experience.Analytical curiosity.\n  I'm Igor Iasevych, a Boston-based business professional working across strategy, operations, and analytics.My background spans banking, consulting, and e-commerce, including AliExpress, Sberbank, Lamoda, PwC, and KPMG. I connect financial discipline with customer needs and practical execution.I'm now pursuing an MS in Applied Business Analytics at Boston University, building on that foundation with statistical modeling, R, and Python.\n  EducationBoston UniversityMS, Applied Business Analytics · In progressEU Business SchoolMBA, Global Banking and FinanceOles Honchar Dnipro National UniversityBachelor's, Management\n  View my CV ↗Let's connect ↗"
+    "text": "I’m Igor Iasevych, a Boston-based business professional working across strategy, operations, and analytics.\nMy background spans banking, consulting, and e-commerce, including AliExpress, Sberbank, Lamoda, PwC, and KPMG. I connect financial discipline with customer needs and practical execution.\nI’m now pursuing an MS in Applied Business Analytics at Boston University, building on that foundation with statistical modeling, R, and Python."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About Me",
+    "section": "Education",
+    "text": "Education\n\nBoston University — MS, Applied Business Analytics · In progress\nEU Business School — MBA, Global Banking and Finance\nOles Honchar Dnipro National University — Bachelor’s, Management\n\nView my CV ↗ · Let’s connect ↗"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Igor Iasevych | Strategy & Applied Analytics",
+    "title": "Igor Iasevych",
     "section": "",
-    "text": "Based in Boston, Massachusetts\n    \n    \n      STRATEGY · FINANCE · ANALYTICS\n      Igor Iasevych.\n      Business perspective. Analytical thinking.\n      I bring more than a decade of experience in finance, strategy, and e-commerce to turning complex business questions into clear decisions.\n      Now pursuing an MS in Applied Business Analytics at Boston University, I combine that experience with R, Python, and statistical modeling.\n      \n        Explore projects ↗\n        View my CV ↗\n      \n      \n         Email\n         LinkedIn\n         GitHub"
+    "text": "I bring more than a decade of experience in finance, strategy, and e-commerce to turning complex business questions into clear decisions.\nNow pursuing an MS in Applied Business Analytics at Boston University, I combine that experience with R, Python, and statistical modeling.\nExplore projects ↗ · View my CV ↗\nBased in Boston, Massachusetts."
+  },
+  {
+    "objectID": "index.html#business-perspective.-analytical-thinking.",
+    "href": "index.html#business-perspective.-analytical-thinking.",
+    "title": "Igor Iasevych",
+    "section": "",
+    "text": "I bring more than a decade of experience in finance, strategy, and e-commerce to turning complex business questions into clear decisions.\nNow pursuing an MS in Applied Business Analytics at Boston University, I combine that experience with R, Python, and statistical modeling.\nExplore projects ↗ · View my CV ↗\nBased in Boston, Massachusetts."
   },
   {
     "objectID": "projects.html",
     "href": "projects.html",
-    "title": "Projects | Igor Iasevych",
+    "title": "Projects",
     "section": "",
-    "text": "SELECTED WORKProjects.Business questions, explored through data.\n  \n    \n    01 / REAL ESTATE ANALYTICSCompletedCanarsie market entryShould a brokerage open an office in Brooklyn? Market segmentation, pricing, and forecasting inform a lean entry strategy.RClusteringRegressionForecastingView project ↗\n  \n  02Project 2Coming soon03Project 3Coming soon"
+    "text": "Residential homes in Canarsie, Brooklyn\n\n\nShould a brokerage open an office in Brooklyn? Market segmentation, pricing, and forecasting inform a lean entry strategy.\nTools: R · Clustering · Regression · Forecasting\nStatus: Completed\nView project ↗"
+  },
+  {
+    "objectID": "projects.html#canarsie-market-entry",
+    "href": "projects.html#canarsie-market-entry",
+    "title": "Projects",
+    "section": "",
+    "text": "Residential homes in Canarsie, Brooklyn\n\n\nShould a brokerage open an office in Brooklyn? Market segmentation, pricing, and forecasting inform a lean entry strategy.\nTools: R · Clustering · Regression · Forecasting\nStatus: Completed\nView project ↗"
+  },
+  {
+    "objectID": "projects.html#coming-soon",
+    "href": "projects.html#coming-soon",
+    "title": "Projects",
+    "section": "Coming soon",
+    "text": "Coming soon\n\nProject 2 — New work will appear here.\nProject 3 — Another addition to my analytics portfolio."
   },
   {
     "objectID": "contact.html",
     "href": "contact.html",
-    "title": "Contact | Igor Iasevych",
+    "title": "Contact",
     "section": "",
-    "text": "LET'S CONNECTStart a conversation.Interested in strategy, analytics, or working together? I'd be glad to hear from you.\n  Emailiiasevych@gmail.com↗LinkedInConnect professionally↗GitHubExplore my repositories↗\n  Based in Boston, Massachusetts."
+    "text": "Interested in strategy, analytics, or working together? I’d be glad to hear from you.\n\nEmail: iiasevych@gmail.com\nLinkedIn: Connect professionally\nGitHub: Explore my repositories\n\nBased in Boston, Massachusetts."
   },
   {
     "objectID": "projects/project-2.html",
     "href": "projects/project-2.html",
-    "title": "Project 2 | Igor Iasevych",
+    "title": "Project 2",
     "section": "",
-    "text": "← All projectsCOMING SOONProject 2.New work will appear here as my portfolio grows.Explore Canarsie ↗"
+    "text": "New work will appear here as my portfolio grows.\n← All projects · Explore Canarsie ↗"
   }
 ]
