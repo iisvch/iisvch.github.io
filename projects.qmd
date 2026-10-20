@@ -11,10 +11,16 @@ Should a brokerage open an office in Brooklyn? Market segmentation, pricing, and
 
 **Tools:** R · Clustering · Regression · Forecasting
 
-
 [View project ↗](projects/canarsie.qmd)
+
+## [theLook eCommerce](projects/thelook.qmd)
+
+Explore customers, order outcomes, and product margins in one interactive Tableau summary, prepared with SQL in BigQuery.
+
+**Tools:** SQL · BigQuery · Python · Tableau
+
+[View project ↗](projects/thelook.qmd)
 
 ## Next
 
-- **Project 2** 
 - **Project 3**
