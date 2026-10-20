@@ -1,52 +1,44 @@
 ---
 title: "theLook eCommerce"
-description: "Customers, order outcomes, and product margins."
+description: "One interactive summary of customers, orders, sales, and product margins."
 ---
 
 [← All projects](../projects.qmd)
 
 ## The question
 
-Where does revenue come from, which products generate gross profit, and how does performance vary across countries and customer segments?
-
-## The approach
-
-I prepared three tables from the public theLook eCommerce dataset in BigQuery: customers, orders, and individual order items. A Python notebook keeps the SQL visible and exports the tables to CSV for Tableau.
+How do customer segments and order outcomes affect sales and product profitability?
 
 **Tools:** SQL · BigQuery · Python · Tableau
 
-::: {.market-metrics}
-::: {.market-metric}
-**Customers**
+## Interactive summary
 
-### 100,000
+[Open the Tableau dashboard ↗](https://us-east-1.online.tableau.com/#/site/iiasevych-811d5b1c1b/views/theLookeCommerce-Summary/Summary){.btn .btn-primary}
 
-Registered customers
-:::
-::: {.market-metric}
-**Orders**
+One dashboard combines key metrics, customers by acquisition source, cumulative order counts, and product-category performance. Filter by country, order year, and traffic source.
 
-### 124,898
+The dashboard is hosted on Tableau Cloud and requires Tableau sign-in.
 
-All order statuses
-:::
-::: {.market-metric}
-**Order items**
+## 2025 snapshot
 
-### 180,842
+| Measure | Result |
+|:--|--:|
+| Placed orders | 28,563 |
+| Orders excluding cancellations | 24,458 |
+| Orders excluding cancellations and returns | 21,663 |
+| Completed retained orders | 7,186 |
+| Ordered items | 41,184 |
+| Completed item sales | 614,921.79 |
+| Gross profit on completed items | 318,483.43 |
 
-Individual items ordered
-:::
-:::
+Monetary figures use the source dataset's units.
 
-## Explore the data
+## How it works
 
-The analysis follows customers by country and acquisition source, orders over time and by current status, and revenue and gross profit by product category.
+Three SQL queries prepare customers, orders, and order items from the public theLook dataset. Tableau reads those BigQuery tables directly. The notebook keeps the same SQL visible and can export the results to CSV.
 
-Revenue and gross profit use completed items with no return date. Gross profit is sale price less inventory cost, before shipping, marketing, and other operating expenses. Order statuses describe the current snapshot rather than a recorded sequence of funnel events.
+Sales and gross profit count items marked Complete with no return date. Gross profit equals sale price minus inventory cost, before other operating expenses. The order sequence uses current statuses; the source has no separate confirmation or payment record.
 
-## Source and notebook
+[View the notebook on GitHub ↗](https://github.com/iisvch/iisvch.github.io/blob/main/thelook_ecommerce.ipynb)
 
-[View the notebook on GitHub](https://github.com/iisvch/iisvch.github.io/blob/main/thelook_ecommerce.ipynb)
-
-Source: [`bigquery-public-data.thelook_ecommerce`](https://console.cloud.google.com/bigquery?p=bigquery-public-data&d=thelook_ecommerce&page=dataset). This is a demonstration using synthetic ecommerce data.
+Source: [theLook eCommerce on BigQuery](https://console.cloud.google.com/bigquery?p=bigquery-public-data&d=thelook_ecommerce&page=dataset). This portfolio example uses synthetic ecommerce data.
