@@ -1,0 +1,52 @@
+---
+title: "theLook eCommerce"
+description: "Customers, order outcomes, and product margins."
+---
+
+[← All projects](../projects.qmd)
+
+## The question
+
+Where does revenue come from, which products generate gross profit, and how does performance vary across countries and customer segments?
+
+## The approach
+
+I prepared three tables from the public theLook eCommerce dataset in BigQuery: customers, orders, and individual order items. A Python notebook keeps the SQL visible and exports the tables to CSV for Tableau.
+
+**Tools:** SQL · BigQuery · Python · Tableau
+
+::: {.market-metrics}
+::: {.market-metric}
+**Customers**
+
+### 100,000
+
+Registered customers
+:::
+::: {.market-metric}
+**Orders**
+
+### 124,898
+
+All order statuses
+:::
+::: {.market-metric}
+**Order items**
+
+### 180,842
+
+Individual items ordered
+:::
+:::
+
+## Explore the data
+
+The analysis follows customers by country and acquisition source, orders over time and by current status, and revenue and gross profit by product category.
+
+Revenue and gross profit use completed items with no return date. Gross profit is sale price less inventory cost, before shipping, marketing, and other operating expenses. Order statuses describe the current snapshot rather than a recorded sequence of funnel events.
+
+## Source and notebook
+
+[View the notebook on GitHub](https://github.com/iisvch/iisvch.github.io/blob/main/thelook_ecommerce.ipynb)
+
+Source: [`bigquery-public-data.thelook_ecommerce`](https://console.cloud.google.com/bigquery?p=bigquery-public-data&d=thelook_ecommerce&page=dataset). This is a demonstration using synthetic ecommerce data.
