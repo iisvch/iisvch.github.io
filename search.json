@@ -1,10 +1,101 @@
 [
   {
-    "objectID": "projects/project-3.html",
-    "href": "projects/project-3.html",
-    "title": "Project 3",
+    "objectID": "projects/thelook.html",
+    "href": "projects/thelook.html",
+    "title": "theLook eCommerce",
+    "section": "",
+    "text": "← All projects"
+  },
+  {
+    "objectID": "projects/thelook.html#the-question",
+    "href": "projects/thelook.html#the-question",
+    "title": "theLook eCommerce",
+    "section": "The question",
+    "text": "The question\nWhere does revenue come from, which products generate gross profit, and how does performance vary across countries and customer segments?"
+  },
+  {
+    "objectID": "projects/thelook.html#the-approach",
+    "href": "projects/thelook.html#the-approach",
+    "title": "theLook eCommerce",
+    "section": "The approach",
+    "text": "The approach\nI prepared three tables from the public theLook eCommerce dataset in BigQuery: customers, orders, and individual order items. A Python notebook keeps the SQL visible and exports the tables to CSV for Tableau.\nTools: SQL · BigQuery · Python · Tableau\n\n\nCustomers\n\n100,000\nRegistered customers\n\n\n\nOrders\n\n124,898\nAll order statuses\n\n\n\nOrder items\n\n180,842\nIndividual items ordered"
+  },
+  {
+    "objectID": "projects/thelook.html#explore-the-data",
+    "href": "projects/thelook.html#explore-the-data",
+    "title": "theLook eCommerce",
+    "section": "Explore the data",
+    "text": "Explore the data\nThe analysis follows customers by country and acquisition source, orders over time and by current status, and revenue and gross profit by product category.\nRevenue and gross profit use completed items with no return date. Gross profit is sale price less inventory cost, before shipping, marketing, and other operating expenses. Order statuses describe the current snapshot rather than a recorded sequence of funnel events."
+  },
+  {
+    "objectID": "projects/thelook.html#source-and-notebook",
+    "href": "projects/thelook.html#source-and-notebook",
+    "title": "theLook eCommerce",
+    "section": "Source and notebook",
+    "text": "Source and notebook\nView the notebook on GitHub\nSource: bigquery-public-data.thelook_ecommerce. This is a demonstration using synthetic ecommerce data."
+  },
+  {
+    "objectID": "projects/project-2.html",
+    "href": "projects/project-2.html",
+    "title": "Project 2",
     "section": "",
     "text": "New work will appear here as my portfolio grows.\n← All projects · Explore Canarsie ↗"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Interested in strategy and analytics. I’d be glad to hear from you.\n\nEmail: iiasevych@gmail.com\nLinkedIn: Connect professionally\nGitHub: Explore my repositories\n\nBased in Boston, Massachusetts."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Residential homes in Canarsie, Brooklyn\n\n\nShould a brokerage open an office in Brooklyn? Market segmentation, pricing, and forecasting inform a lean entry strategy.\nTools: R · Clustering · Regression · Forecasting\nView project ↗"
+  },
+  {
+    "objectID": "projects.html#canarsie-market-entry",
+    "href": "projects.html#canarsie-market-entry",
+    "title": "Projects",
+    "section": "",
+    "text": "Residential homes in Canarsie, Brooklyn\n\n\nShould a brokerage open an office in Brooklyn? Market segmentation, pricing, and forecasting inform a lean entry strategy.\nTools: R · Clustering · Regression · Forecasting\nView project ↗"
+  },
+  {
+    "objectID": "projects.html#next",
+    "href": "projects.html#next",
+    "title": "Projects",
+    "section": "Next",
+    "text": "Next\n\nProject 2\nProject 3"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Igor Iasevych",
+    "section": "",
+    "text": "I bring more than a decade of experience in finance, strategy, and e-commerce to turning complex business questions into clear decisions.\nNow pursuing an MS in Applied Business Analytics at Boston University, I combine that experience with R, Python, and statistical modeling.\nExplore projects ↗ · View my CV ↗\nBased in Boston, Massachusetts."
+  },
+  {
+    "objectID": "index.html#business-perspective.-analytical-thinking.",
+    "href": "index.html#business-perspective.-analytical-thinking.",
+    "title": "Igor Iasevych",
+    "section": "",
+    "text": "I bring more than a decade of experience in finance, strategy, and e-commerce to turning complex business questions into clear decisions.\nNow pursuing an MS in Applied Business Analytics at Boston University, I combine that experience with R, Python, and statistical modeling.\nExplore projects ↗ · View my CV ↗\nBased in Boston, Massachusetts."
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
+    "section": "",
+    "text": "Open or download my full CV (PDF) ↗"
+  },
+  {
+    "objectID": "cv.html#selected-experience",
+    "href": "cv.html#selected-experience",
+    "title": "CV",
+    "section": "Selected experience",
+    "text": "Selected experience\n\n\n\nRole\nOrganization\nYears\n\n\n\n\nBusiness Operations Manager\nXDROPE LLC\n2024–2026\n\n\nStrategy and Development Director\nSberbank\n2023–2024\n\n\nSenior Specialist, Strategy\nAliExpress\n2021–2022\n\n\nCorporate Strategy Manager\nLamoda Group\n2019–2021\n\n\n\nMy full CV includes professional history, education, and capabilities."
   },
   {
     "objectID": "projects/canarsie.html",
@@ -35,65 +126,9 @@
     "text": "Neighborhood explorer\nWhere does Canarsie sit in NYC’s residential market? Compare 256 neighborhoods using cleaned sales from 2009–2025.\n\n\nCanarsie sales\n\n5,955\nResidential transactions\n\n\n\nMedian price / sq ft\n\n$268.40\nCanarsie · 2009–2025\n\n\n\nMedian sale price\n\n$503,500\nCanarsie · 2009–2025\n\n\n\nEach point is a neighborhood: sales count on the horizontal axis, median price per square foot on the vertical axis. Colors identify clusters; the black diamond marks Canarsie.\nExplore: Hover or tap a point for details. Click a cluster in the legend to hide or show it, drag to zoom, and double-click the plot to reset.\n\nStrategic Clustering — All NYC Neighborhoods\n\n\n\n\n\n\n\n\nWhat this means for Canarsie\nCanarsie belongs to Cluster 2: Mid-market, the notebook’s higher-volume group. Its 5,955 sales and $268.40 median price per square foot point to an established residential market at a lower price per square foot than the cluster average of about $337.\nThe luxury cluster sits much higher on the price axis, while many mid-market neighborhoods sit farther to the right. For market entry, the chart helps separate transaction activity from pricing and identify comparable neighborhoods.\n\n\nClosest pricing peers\nThese five neighborhoods share Canarsie’s cluster and have the closest median prices per square foot. They provide useful comparison markets, rather than a claim that every property is equivalent.\n\n\n\n\n\nNeighborhood\nSales\nMedian $/sq ft\nMedian sale price\n\n\n\n\nArden Heights\n3,016\n$267.56\n$400,000\n\n\nSouth Jamaica\n5,815\n$260.64\n$389,000\n\n\nSt. Albans\n6,787\n$277.34\n$415,000\n\n\nThrogs Neck\n2,978\n$283.63\n$495,000\n\n\nRidgewood\n3,125\n$284.55\n$814,199\n\n\n\n\n\n\n\nHow the clusters were built\nThe analysis keeps residential sales with a positive price and known, positive gross square footage. Neighborhoods need at least two qualifying sales. K-means groups them using four standardized measures: median sale price, transaction count, median price per square foot, and sale-price variability (k = 3; seed = 42).\nThis chart shows two of those four measures. Sales counts describe the cleaned sample; cluster names are descriptive labels from the analysis. Historical clusters are not forecasts of future prices.\nAcademic findings under assignment assumptions. Samples differ by analytical stage."
   },
   {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "CV",
-    "section": "",
-    "text": "Open or download my full CV (PDF) ↗"
-  },
-  {
-    "objectID": "cv.html#selected-experience",
-    "href": "cv.html#selected-experience",
-    "title": "CV",
-    "section": "Selected experience",
-    "text": "Selected experience\n\n\n\nRole\nOrganization\nYears\n\n\n\n\nBusiness Operations Manager\nXDROPE LLC\n2024–2026\n\n\nStrategy and Development Director\nSberbank\n2023–2024\n\n\nSenior Specialist, Strategy\nAliExpress\n2021–2022\n\n\nCorporate Strategy Manager\nLamoda Group\n2019–2021\n\n\n\nMy full CV includes professional history, education, and capabilities."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Igor Iasevych",
-    "section": "",
-    "text": "I bring more than a decade of experience in finance, strategy, and e-commerce to turning complex business questions into clear decisions.\nNow pursuing an MS in Applied Business Analytics at Boston University, I combine that experience with R, Python, and statistical modeling.\nExplore projects ↗ · View my CV ↗\nBased in Boston, Massachusetts."
-  },
-  {
-    "objectID": "index.html#business-perspective.-analytical-thinking.",
-    "href": "index.html#business-perspective.-analytical-thinking.",
-    "title": "Igor Iasevych",
-    "section": "",
-    "text": "I bring more than a decade of experience in finance, strategy, and e-commerce to turning complex business questions into clear decisions.\nNow pursuing an MS in Applied Business Analytics at Boston University, I combine that experience with R, Python, and statistical modeling.\nExplore projects ↗ · View my CV ↗\nBased in Boston, Massachusetts."
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Residential homes in Canarsie, Brooklyn\n\n\nShould a brokerage open an office in Brooklyn? Market segmentation, pricing, and forecasting inform a lean entry strategy.\nTools: R · Clustering · Regression · Forecasting\nView project ↗"
-  },
-  {
-    "objectID": "projects.html#canarsie-market-entry",
-    "href": "projects.html#canarsie-market-entry",
-    "title": "Projects",
-    "section": "",
-    "text": "Residential homes in Canarsie, Brooklyn\n\n\nShould a brokerage open an office in Brooklyn? Market segmentation, pricing, and forecasting inform a lean entry strategy.\nTools: R · Clustering · Regression · Forecasting\nView project ↗"
-  },
-  {
-    "objectID": "projects.html#next",
-    "href": "projects.html#next",
-    "title": "Projects",
-    "section": "Next",
-    "text": "Next\n\nProject 2\nProject 3"
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "Interested in strategy and analytics. I’d be glad to hear from you.\n\nEmail: iiasevych@gmail.com\nLinkedIn: Connect professionally\nGitHub: Explore my repositories\n\nBased in Boston, Massachusetts."
-  },
-  {
-    "objectID": "projects/project-2.html",
-    "href": "projects/project-2.html",
-    "title": "Project 2",
+    "objectID": "projects/project-3.html",
+    "href": "projects/project-3.html",
+    "title": "Project 3",
     "section": "",
     "text": "New work will appear here as my portfolio grows.\n← All projects · Explore Canarsie ↗"
   }
