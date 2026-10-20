@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Customers, order outcomes, and product margins.">
+<meta name="description" content="One interactive summary of customers, orders, sales, and product margins.">
 
 <title>theLook eCommerce – Igor Iasevych</title>
 <style>
@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-0de9e7649c22dfc5de65b8f2675b54b5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-87876aa65275e2fff8c92f9e9cd8914c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -61,7 +61,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta property="og:title" content="theLook eCommerce – Igor Iasevych">
-<meta property="og:description" content="Customers, order outcomes, and product margins.">
+<meta property="og:description" content="One interactive summary of customers, orders, sales, and product margins.">
 <meta property="og:site_name" content="Igor Iasevych">
 </head>
 
@@ -131,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    Customers, order outcomes, and product margins.
+    One interactive summary of customers, orders, sales, and product margins.
   </div>
 </div>
 
@@ -151,45 +151,63 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="../projects.html">← All projects</a></p>
 <section id="the-question" class="level2">
 <h2 data-anchor-id="the-question">The question</h2>
-<p>Where does revenue come from, which products generate gross profit, and how does performance vary across countries and customer segments?</p>
-</section>
-<section id="the-approach" class="level2">
-<h2 data-anchor-id="the-approach">The approach</h2>
-<p>I prepared three tables from the public theLook eCommerce dataset in BigQuery: customers, orders, and individual order items. A Python notebook keeps the SQL visible and exports the tables to CSV for Tableau.</p>
+<p>How do customer segments and order outcomes affect sales and product profitability?</p>
 <p><strong>Tools:</strong> SQL · BigQuery · Python · Tableau</p>
-<div class="market-metrics">
-<div class="market-metric">
-<p><strong>Customers</strong></p>
-<section id="section" class="level3">
-<h3 data-anchor-id="section">100,000</h3>
-<p>Registered customers</p>
 </section>
-</div>
-<div class="market-metric">
-<p><strong>Orders</strong></p>
-<section id="section-1" class="level3">
-<h3 data-anchor-id="section-1">124,898</h3>
-<p>All order statuses</p>
+<section id="interactive-summary" class="level2">
+<h2 data-anchor-id="interactive-summary">Interactive summary</h2>
+<p><a href="https://us-east-1.online.tableau.com/#/site/iiasevych-811d5b1c1b/views/theLookeCommerce-Summary/Summary" class="btn btn-primary">Open the Tableau dashboard ↗</a></p>
+<p>One dashboard combines key metrics, customers by acquisition source, cumulative order counts, and product-category performance. Filter by country, order year, and traffic source.</p>
+<p>The dashboard is hosted on Tableau Cloud and requires Tableau sign-in.</p>
 </section>
-</div>
-<div class="market-metric">
-<p><strong>Order items</strong></p>
-<section id="section-2" class="level3">
-<h3 data-anchor-id="section-2">180,842</h3>
-<p>Individual items ordered</p>
+<section id="snapshot" class="level2">
+<h2 data-anchor-id="snapshot">2025 snapshot</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Measure</th>
+<th style="text-align: right;">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Placed orders</td>
+<td style="text-align: right;">28,563</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Orders excluding cancellations</td>
+<td style="text-align: right;">24,458</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Orders excluding cancellations and returns</td>
+<td style="text-align: right;">21,663</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Completed retained orders</td>
+<td style="text-align: right;">7,186</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ordered items</td>
+<td style="text-align: right;">41,184</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Completed item sales</td>
+<td style="text-align: right;">614,921.79</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Gross profit on completed items</td>
+<td style="text-align: right;">318,483.43</td>
+</tr>
+</tbody>
+</table>
+<p>Monetary figures use the source dataset’s units.</p>
 </section>
-</div>
-</div>
-</section>
-<section id="explore-the-data" class="level2">
-<h2 data-anchor-id="explore-the-data">Explore the data</h2>
-<p>The analysis follows customers by country and acquisition source, orders over time and by current status, and revenue and gross profit by product category.</p>
-<p>Revenue and gross profit use completed items with no return date. Gross profit is sale price less inventory cost, before shipping, marketing, and other operating expenses. Order statuses describe the current snapshot rather than a recorded sequence of funnel events.</p>
-</section>
-<section id="source-and-notebook" class="level2">
-<h2 data-anchor-id="source-and-notebook">Source and notebook</h2>
-<p><a href="https://github.com/iisvch/iisvch.github.io/blob/main/thelook_ecommerce.ipynb">View the notebook on GitHub</a></p>
-<p>Source: <a href="https://console.cloud.google.com/bigquery?p=bigquery-public-data&amp;d=thelook_ecommerce&amp;page=dataset"><code>bigquery-public-data.thelook_ecommerce</code></a>. This is a demonstration using synthetic ecommerce data.</p>
+<section id="how-it-works" class="level2">
+<h2 data-anchor-id="how-it-works">How it works</h2>
+<p>Three SQL queries prepare customers, orders, and order items from the public theLook dataset. Tableau reads those BigQuery tables directly. The notebook keeps the same SQL visible and can export the results to CSV.</p>
+<p>Sales and gross profit count items marked Complete with no return date. Gross profit equals sale price minus inventory cost, before other operating expenses. The order sequence uses current statuses; the source has no separate confirmation or payment record.</p>
+<p><a href="https://github.com/iisvch/iisvch.github.io/blob/main/thelook_ecommerce.ipynb">View the notebook on GitHub ↗</a></p>
+<p>Source: <a href="https://console.cloud.google.com/bigquery?p=bigquery-public-data&amp;d=thelook_ecommerce&amp;page=dataset">theLook eCommerce on BigQuery</a>. This portfolio example uses synthetic ecommerce data.</p>
 
 
 </section>

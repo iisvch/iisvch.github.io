@@ -11,28 +11,28 @@
     "href": "projects/thelook.html#the-question",
     "title": "theLook eCommerce",
     "section": "The question",
-    "text": "The question\nWhere does revenue come from, which products generate gross profit, and how does performance vary across countries and customer segments?"
+    "text": "The question\nHow do customer segments and order outcomes affect sales and product profitability?\nTools: SQL · BigQuery · Python · Tableau"
   },
   {
-    "objectID": "projects/thelook.html#the-approach",
-    "href": "projects/thelook.html#the-approach",
+    "objectID": "projects/thelook.html#interactive-summary",
+    "href": "projects/thelook.html#interactive-summary",
     "title": "theLook eCommerce",
-    "section": "The approach",
-    "text": "The approach\nI prepared three tables from the public theLook eCommerce dataset in BigQuery: customers, orders, and individual order items. A Python notebook keeps the SQL visible and exports the tables to CSV for Tableau.\nTools: SQL · BigQuery · Python · Tableau\n\n\nCustomers\n\n100,000\nRegistered customers\n\n\n\nOrders\n\n124,898\nAll order statuses\n\n\n\nOrder items\n\n180,842\nIndividual items ordered"
+    "section": "Interactive summary",
+    "text": "Interactive summary\nOpen the Tableau dashboard ↗\nOne dashboard combines key metrics, customers by acquisition source, cumulative order counts, and product-category performance. Filter by country, order year, and traffic source.\nThe dashboard is hosted on Tableau Cloud and requires Tableau sign-in."
   },
   {
-    "objectID": "projects/thelook.html#explore-the-data",
-    "href": "projects/thelook.html#explore-the-data",
+    "objectID": "projects/thelook.html#snapshot",
+    "href": "projects/thelook.html#snapshot",
     "title": "theLook eCommerce",
-    "section": "Explore the data",
-    "text": "Explore the data\nThe analysis follows customers by country and acquisition source, orders over time and by current status, and revenue and gross profit by product category.\nRevenue and gross profit use completed items with no return date. Gross profit is sale price less inventory cost, before shipping, marketing, and other operating expenses. Order statuses describe the current snapshot rather than a recorded sequence of funnel events."
+    "section": "2025 snapshot",
+    "text": "2025 snapshot\n\n\n\nMeasure\nResult\n\n\n\n\nPlaced orders\n28,563\n\n\nOrders excluding cancellations\n24,458\n\n\nOrders excluding cancellations and returns\n21,663\n\n\nCompleted retained orders\n7,186\n\n\nOrdered items\n41,184\n\n\nCompleted item sales\n614,921.79\n\n\nGross profit on completed items\n318,483.43\n\n\n\nMonetary figures use the source dataset’s units."
   },
   {
-    "objectID": "projects/thelook.html#source-and-notebook",
-    "href": "projects/thelook.html#source-and-notebook",
+    "objectID": "projects/thelook.html#how-it-works",
+    "href": "projects/thelook.html#how-it-works",
     "title": "theLook eCommerce",
-    "section": "Source and notebook",
-    "text": "Source and notebook\nView the notebook on GitHub\nSource: bigquery-public-data.thelook_ecommerce. This is a demonstration using synthetic ecommerce data."
+    "section": "How it works",
+    "text": "How it works\nThree SQL queries prepare customers, orders, and order items from the public theLook dataset. Tableau reads those BigQuery tables directly. The notebook keeps the same SQL visible and can export the results to CSV.\nSales and gross profit count items marked Complete with no return date. Gross profit equals sale price minus inventory cost, before other operating expenses. The order sequence uses current statuses; the source has no separate confirmation or payment record.\nView the notebook on GitHub ↗\nSource: theLook eCommerce on BigQuery. This portfolio example uses synthetic ecommerce data."
   },
   {
     "objectID": "projects/project-2.html",
@@ -63,11 +63,18 @@
     "text": "Residential homes in Canarsie, Brooklyn\n\n\nShould a brokerage open an office in Brooklyn? Market segmentation, pricing, and forecasting inform a lean entry strategy.\nTools: R · Clustering · Regression · Forecasting\nView project ↗"
   },
   {
+    "objectID": "projects.html#thelook-ecommerce",
+    "href": "projects.html#thelook-ecommerce",
+    "title": "Projects",
+    "section": "theLook eCommerce",
+    "text": "theLook eCommerce\nExplore customers, order outcomes, and product margins in one interactive Tableau summary, prepared with SQL in BigQuery.\nTools: SQL · BigQuery · Python · Tableau\nView project ↗"
+  },
+  {
     "objectID": "projects.html#next",
     "href": "projects.html#next",
     "title": "Projects",
     "section": "Next",
-    "text": "Next\n\nProject 2\nProject 3"
+    "text": "Next\n\nProject 3"
   },
   {
     "objectID": "index.html",
