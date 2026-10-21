@@ -1,11 +1,6 @@
 ---
 title: "Projects"
 description: "Business questions, explored through data."
-include-in-header:
-  text: |
-    <style>
-    #thelook-ecommerce .quarto-figure img { height: auto; }
-    </style>
 ---
 
 ## [Canarsie market entry](projects/canarsie.qmd)
