@@ -15,6 +15,8 @@ Should a brokerage open an office in Brooklyn? Market segmentation, pricing, and
 
 ## [theLook eCommerce](projects/thelook.qmd)
 
+![theLook eCommerce performance overview](<images/theLook eCommerce | Performance overview.png>){fig-alt="Tableau dashboard showing theLook eCommerce customers, orders, sales, and product performance" style="height: auto;"}
+
 Explore customers, order outcomes, and product margins in one interactive Tableau summary, prepared with SQL in BigQuery.
 
 **Tools:** SQL · BigQuery · Python · Tableau
