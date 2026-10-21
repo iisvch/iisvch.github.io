@@ -1,6 +1,11 @@
 ---
 title: "Projects"
 description: "Business questions, explored through data."
+include-in-header:
+  text: |
+    <style>
+    #thelook-ecommerce .quarto-figure img { height: auto; }
+    </style>
 ---
 
 ## [Canarsie market entry](projects/canarsie.qmd)
@@ -15,7 +20,7 @@ Should a brokerage open an office in Brooklyn? Market segmentation, pricing, and
 
 ## [theLook eCommerce](projects/thelook.qmd)
 
-![theLook eCommerce performance overview](<images/theLook eCommerce | Performance overview.png>){fig-alt="Tableau dashboard showing theLook eCommerce customers, orders, sales, and product performance" style="height: auto;"}
+![theLook eCommerce performance overview](<images/theLook eCommerce | Performance overview.png>){fig-alt="Tableau dashboard showing theLook eCommerce customers, orders, sales, and product performance"}
 
 Explore customers, order outcomes, and product margins in one interactive Tableau summary, prepared with SQL in BigQuery.
 
