@@ -93,7 +93,7 @@ p <- ggplot(nbhd_agg, aes(x = total_sales, y = median_psf, color = cluster, text
              color = "black", size = 5, shape = 18) +
   geom_text(data = filter(nbhd_agg, NEIGHBORHOOD_NAME == MY_NEIGHBORHOOD),
             aes(label = NEIGHBORHOOD_NAME), vjust = -1, color = "black", size = 3) +
-  scale_color_manual(values = c("1" = "#638f9b", "2" = "#17685f", "3" = "#bb7953"),
+  scale_color_manual(values = c("1" = "#638f9b", "2" = "#17685f", "3" = "#ed82c6"),
                      labels = c("1 · Budget basics", "2 · Mid-market", "3 · Luxury")) +
   scale_y_continuous(labels = label_dollar()) +
   scale_x_continuous(labels = label_comma()) +
